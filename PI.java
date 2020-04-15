@@ -17,6 +17,10 @@ public class PI {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Number: ");
         num = sc.nextInt();
+        while(num>15){
+            System.out.println("please enter a value less than or equal to 15");
+            num = sc.nextInt();
+        }
         double pI;
         pI = Math.PI;
         String n=("%."+num+"f");
